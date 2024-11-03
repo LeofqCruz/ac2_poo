@@ -32,9 +32,10 @@ public abstract class FuncionarioBase {
    // Método abstrato para calcular salario que deve ser herdado
    public abstract double calcularSalario();
 
-   // public double calcularSalario(double bonusAdicional) {
-   // return salarioBase + bonusAdicional;
-   // };
+   // sobrecarga do método para calcular salário com bonus adicional
+   public double calcularSalario(double bonusAdicional) {
+   return salarioBase + bonusAdicional;
+   };
 
    // método abstrato para exibir informações que deve ser herdaddo
    @Override
